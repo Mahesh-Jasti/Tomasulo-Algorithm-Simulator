@@ -1,0 +1,10 @@
+MUL 0 1 2      // "Enter the Instructions:" is prompted before you input the instructions
+ADD 2 2 3      // ADD, SUB, MUL and DIV are the opcodes.
+SUB 3 1 0      // 0, 1, 2 etc till 7 are the references to the corresponding Registers
+$              // This symbol is essential and represents the End of Instructions
+
+// "Enter the 8 Registers' values:" is prompted.
+1 2 3 4 5 6 7 8  // These are the values of the Registers starting from 0th to the 7th.
+
+// "Adder Delay: Subtractor Delay: Multiplier Delay: Divider Delay:" are prompted next and have to input the numbers correspondingly
+2 2 10 40       // These are the delay contraints.
