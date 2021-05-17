@@ -1,0 +1,13 @@
+Instructions with Renamed Registers:                      // This is the first output of the code which renames the Registers to remove WAW and WAR hazards.
+MUL 0 1 2
+ADD 8 2 3
+SUB 9 1 0
+
+Total time: 13 units                                     // This is the total time of Exection of the Code
+
+Register values: 6 2 7 -4 5 6 7 8                        // Final Register values
+
+Executed Order of Instructions:                          // Final execution order of the Instructions.
+ADD 8 2 3
+MUL 0 1 2
+SUB 9 1 0
