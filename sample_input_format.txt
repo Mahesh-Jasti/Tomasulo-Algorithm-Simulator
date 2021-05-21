@@ -8,3 +8,4 @@ $              // This symbol is essential and represents the End of Instruction
 
 // "Adder Delay: Subtractor Delay: Multiplier Delay: Divider Delay:" are prompted next and have to input the numbers correspondingly
 2 2 10 40       // These are the delay contraints.
+                // 2 units for ADD, 2 units for SUB, 10 units for MUL, 40 units for DIV
