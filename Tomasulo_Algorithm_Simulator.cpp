@@ -229,7 +229,7 @@ int main(){
 	//----------------------------------------------------------------
 
 	// --------- Clock units per Instruction ---------
-	cout << "Clock Units per Instruction: " << (double)time_counter/(double)instruction_num << setprecision(4) << fixed << "\n\n";
+	cout << "Clock units per Instruction: " << (double)time_counter/(double)instruction_num << setprecision(4) << fixed << "\n\n";
 	//----------------------------------------------------------------
 	
 	// --------- The Register values at the end of all instructions -----------
