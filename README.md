@@ -1,5 +1,13 @@
 # Tomasulo-Algorithm-Simulator
 This project is simulation of Dynamic Scheduling using Tomasulo Algorithm for Arithmetic Operations and will take contraint inputs from the User to simulate different scenarios for the same algorithm and instructions.
+Tomasulo Algorithm is a famous algorithm used for scheduling the instructions dynamically and using the Reservation Stations to execute the instructions 
+parallelly. The Motive of this algorithm is to parallelise the execution of instruction and reduce the total time of execution of the instructions.
+    
+The GOAL of my project is to simulate the Tomasulo algorithm's behaviour on instructions. For this, the input must be basic Arithmetic operations which
+are ADD, SUB, MUL and DIV and operates on 2 registers and writes the output to another register. 
+Also, we can additionally give the DELAY constraints for these arithmetic operations and see the changes in the total time taken for the same algorithm to
+work on the same instructions. This project can be used to simulate the Tomasulo Algorithm for different delay constraints and will in turn help us in 
+speculating where we can optimise at the hardware level.
 
 Input from the User --
 1) Instructions with an opcode and 3 operand registers.
