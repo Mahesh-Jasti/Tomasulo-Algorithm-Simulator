@@ -19,6 +19,8 @@ typedef unsigned long long int ull;
     The Algorithm is coded in C++. 
     Used 8 registers. 5 Reservation stations - 3 for ADD,SUB and 2 for MUL,DIV. Kept the code flexible enough to add more reservation stations.
     Coded register renaming initially to avoid WAW and WAR hazards assuming unused registers is abundant enough.
+    
+    DIVISION BY "ZERO" MUST BE AVOIDED or the PROGRAM will CRASH
 */
 
 // ---------- Reservation Station ------------
