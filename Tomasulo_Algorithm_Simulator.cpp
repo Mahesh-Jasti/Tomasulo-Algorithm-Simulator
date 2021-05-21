@@ -6,6 +6,20 @@ typedef unsigned long long int ull;
 // GCD inbuilt func: __gcd(a,b)
 // LCM formula: (a*b)/__gcd(a,b)
 
+/*
+    Tomasulo Algorithm is a famous algorithm used for scheduling the instructions dynamically and using the Reservation Stations to execute the instructions 
+    parallelly. The Motive of this algorithm is to parallelise the execution of instruction and reduce the total time of execution of the instructions.
+    
+    The GOAL of my project is to simulate the Tomasulo algorithm's behaviour on instructions. For this, the input must be basic Arithmetic operations which
+    are ADD, SUB, MUL and DIV and operates on 2 registers and writes the output to another register. 
+    Also, we can additionally give the DELAY constraints for these arithmetic operations and see the changes in the total time taken for the same algorithm to
+    work on the same instructions. This project can be used to simulate the Tomasulo Algorithm for different delay constraints and will in turn help us in 
+    speculating where we can optimise at the hardware level.
+    
+    The Algorithm is coded in C++. 
+    Used 8 registers. 5 Reservation stations - 3 for ADD,SUB and 2 for MUL,DIV. Kept the code flexible enough to add more reservation stations.
+    Coded register renaming initially to avoid WAW and WAR hazards assuming unused registers is abundant enough.
+*/
 // ---------- Reservation Station ------------
 struct Reservation_Station{
 	bool busy;
