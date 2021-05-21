@@ -228,6 +228,10 @@ int main(){
 	cout << "Total time: " << time_counter << " units" << "\n\n";
 	//----------------------------------------------------------------
 
+	// --------- Clock units per Instruction ---------
+	cout << "Clock Units per Instruction: " << (double)time_counter/(double)instruction_num << setprecision(4) << fixed << "\n\n";
+	//----------------------------------------------------------------
+	
 	// --------- The Register values at the end of all instructions -----------
 	cout << "Register values: ";
 	for(ll i=0;i<8;i++) cout << f[reg_rename_map[instruction_num-1][i]].val << " ";
