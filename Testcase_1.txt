@@ -1,0 +1,33 @@
+INPUT
+
+DIV 0 1 2        // Instructions
+MUL 3 0 1
+MUL 3 1 4
+ADD 5 2 4
+MUL 4 1 2
+$               // End of Instructions
+1 2 3 4 5 6 7 8 // Values in Registers
+3 3 10 15       // ADD-SUB delay=3 units, MUL delay=10 units, DIV delay=15 units
+
+
+OUTPUT
+
+Instructions with Renamed Registers:
+DIV 0 1 2
+MUL 8 0 1
+MUL 9 1 4
+ADD 10 2 4
+MUL 11 1 2
+
+Total time: 35 units
+
+Clock units per Instruction: 7
+
+Register values: 0 2 3 10 6 8 7 8 
+
+Executed Order of Instructions:
+DIV 0 1 2
+ADD 10 2 4
+MUL 8 0 1
+MUL 9 1 4
+MUL 11 1 2
